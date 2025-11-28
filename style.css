@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+:root {
+    --branco: #FDEAF1;
+    --rosa-pastel: #F7C5D9;
+    --rosa-claro: #F190C0;
+    --rosa-medio-claro: #F2A3C5;
+    --rosa-choque: #F214C5;
+    --rosa-vibrante: #F17BAD;
+    --rosa-muito-claro: #FBB0D0;
+    --rosa-palido: #F48F9F;
+    --rosa-claro-2: #F0819E;
+    --rosa-medio: #EC4079;
+    --rosa-forte: #E12063;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    background-color: var(--branco);
+    color: #333;
+   
+}
+
+
+header {
+    background: linear-gradient(90deg, var(--rosa-pastel), var(--rosa-medio-claro));
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .logo img {
+    width: 200px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--rosa-forte);
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--rosa-choque);
+}
+
+section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+
+section h2 {
+    color: var(--rosa-forte);
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+
+section p {
+    color: #555;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+#sobre img, #paleta img, #automaquiagem img{
+    width: 250px;
+}
+
+.conteudo{
+    display: flex;
+}
+
+#sobre h2{
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
+
+#paleta h2{
+    font-family: "Lobster", sans-serif;
+    font-style: normal;
+    font-size: 40px;
+}
+
+
+#automaquiagem h2{
+    font-family: "Lobster", sans-serif;
+    font-style: normal;
+    font-size: 40px;
+}
+
+#dicas ul li{
+    text-align: left;
+}
+
+#dicas h2{
+    font-family: "Lobster", sans-serif;
+    font-style: normal;
+    font-size: 40px;
+}
+
+#diversidade h2{
+    font-family: "Lobster", sans-serif;
+    font-style: normal;
+    font-size: 40px;
+}
+
+
+#inspire h2{
+    font-family: "Lobster", sans-serif;
+    font-style: normal;
+    font-size: 40px;
+}
+
+#informe h2{
+    font-family: "Lobster", sans-serif;
+    font-style: normal;
+    font-size: 40px;
+}
+
+ .videos-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    margin: 1rem 0;
+  }
+  .video-card {
+    background: transparent;
+  }
+  .video-wrap {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  }
+  .video-wrap iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  .video-caption {
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+    color: #333;
+  }
